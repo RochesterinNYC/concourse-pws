@@ -1,6 +1,6 @@
 ---
 applications:
-  - name: concourse
+  - name: concourse-web
     command: ./pws_setup.sh
     memory: 1024MB
     services:
