@@ -1,0 +1,9 @@
+---
+applications:
+  - name: concourse
+    command: ./pws_setup.sh
+    memory: 1024MB
+    services:
+    - concourse-pg
+    buildpack: binary_buildpack
+    random-route: true
