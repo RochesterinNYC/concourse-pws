@@ -6,4 +6,9 @@ applications:
     services:
     - concourse-pg
     buildpack: binary_buildpack
+    host: concourse-pws
+  - name: concourse-worker
+    command: ./pws_worker_setup.sh
+    memory: 1024MB
+    buildpack: binary_buildpack
     random-route: true
